@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Style</title>
+        <style>
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100vh;
+            }
+            table{
+                width: 80%;
+                border-collapse:collapse;
+                border:1px solid yellow
+            }
+
+            table tr{
+                text-align: left;
+            }
+
+            table th{
+                background-color: aqua;
+            }
+
+            table td,table th{
+                padding: 10px 10px;
+            }
+
+            table tbody tr:nth-child(even){
+                background-color:#eeeeee70;
+               
+            }
+
+            table tbody tr:nth-child(even):hover{
+                background-color: violet;
+                color:black
+            }
+
+            table tbody tr:nth-child(odd):hover{
+                background-color: yellow;
+                color:black
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Aung Aung</td>
+                        <td>Male</td>
+                        <td>gjjqet@gmail.com</td>
+                        <td>Mandalay</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maung Maung</td>
+                        <td>Male</td>
+                        <td>maungmaung@gmail.com</td>
+                        <td>Yangon</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Su Su</td>
+                        <td>Female</td>
+                        <td>susu@gmail.com</td>
+                        <td>Taung Kyi</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Khat Khat</td>
+                        <td>Female</td>
+                        <td>khat@gmail.com</td>
+                        <td>Pwin Oo Lwin</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
+
+<!-- border-collapse:collapse
+    <thead><thead>
+    <tbody><tbody>
+
+    nth-child(even){}
+    nth-child(odd){}
+  -->

@@ -1,0 +1,267 @@
+
+.sectioncontainer{
+    background-color: black;
+}
+
+
+.s1{
+    
+    width: 100%;
+    height: 50px;
+    background-color:#1B1B1B;
+    color:gray;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.headercontainer{
+    height: 75px;
+}
+
+.totalcontainer{
+    padding: 5px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font{
+    font-size: 20px;
+    color:lightgray;
+    margin-left: 15px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    
+}
+
+.blvck{
+    margin-bottom: 0;
+}
+
+
+
+.line{
+   
+    height:1px ;
+    background-color:#f4f4f430;
+}
+
+.bar{
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.select{
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    margin-left: 40px;
+    color:white;
+  
+}
+
+.select:hover{
+    border-bottom: 3px solid white;
+}
+
+.s3{
+    width: 100%;
+    height: 500px;
+    background-image: url(../../image/shop1.webp);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sale{
+    font-size: 70px;
+    color:white;
+    margin-bottom: 50px;
+    text-shadow: 0px 0px 15px black;
+}
+
+.mencon{
+    display: flex;
+    
+}
+.select2{
+    width: 170px;
+    height: 50px;
+    background-color: black;
+    color:white;
+    margin-left: 50px;
+
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 0px 15px white;
+
+}
+
+.s4{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.shopmen,.shopwomen{
+    font-size: 18px;
+    margin-left: 60px;
+}
+
+
+.men,.women{
+    margin-left: 60px;
+}
+
+/* Section 5 */
+
+.s5{
+    display: flex;
+    height: 470px;
+
+}
+
+.s6{
+    display: flex;
+    height: 470px;
+}
+
+
+.imagecontainer{
+    width: 400px;
+    height: 450px;
+    background-color:#B7B7B7;
+    margin-left: 4px;
+    box-shadow: 3px 3px 15px black;
+   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+ 
+}
+
+.imagecontainer:hover{
+    transform: scale(1.1);
+}
+
+.image{
+    width: 360px;
+}
+
+del{
+    margin-left: 6px;
+}
+
+.outware{
+    padding: 10px;
+}
+
+.font2{
+    font-size: 20px;
+
+}
+
+
+/* For Slider */
+
+.left{
+    width: 400px;
+    height: 450px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.span1{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+
+    
+    position:absolute;
+    font-size: 20px;
+    z-index: 1;
+}
+
+/* For Slider */
+
+.right{
+    width: 400px;
+    height: 450px;
+    background-color: red;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+       
+}
+
+ .span2{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+
+    position: absolute;
+
+    right: 0;
+    
+} 
+
+
+.fa-greater-than{
+    font-size: 20px;
+}
+
+.fussy{
+    display: flex;
+}
+
+
+
+
+
+.women:hover{
+    opacity: 0.8;
+ 
+}
+
+.men:hover{
+    opacity: 0.8;
+ 
+}
+
+

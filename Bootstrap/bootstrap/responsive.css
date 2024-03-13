@@ -1,0 +1,15 @@
+@media (max-width:768px) {
+  body{
+    background-color: black;
+  }
+
+  img{
+    width: 49% !important;
+  }
+}
+
+@media (max-width:576px) {
+    img{
+        width: 100% !important;
+    }
+}

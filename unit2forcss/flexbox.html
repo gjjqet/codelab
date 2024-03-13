@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style>
+            .container{
+                width: 600px;
+                height: 400px;
+                background-color: steelblue;
+                margin:auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .child{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                margin:5px
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="child child1"></div>
+            <div class="child child2"></div>
+            <div class="child child3"></div>
+        </div>
+    </body>
+</html>
+
+<!-- 
+    justify-content=flex-start/end
+    align-self=flex-start/end/center
+    flex-flow = flex-direction +  flex-wrap
+    flex-direction = row-reverse
+ -->

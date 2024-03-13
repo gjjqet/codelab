@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color:var(--red);
+    
+}
+
+html::-webkit-scrollbar-track{
+    background-color: yellow;
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background-color: var(--vio);
+}
+
+:root{
+    --wht:white;
+    --red:red;
+    --bla:black;
+    --vio:violet;
+}
+
+body{
+    background-color:var(--bla) ;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;   
+    background-color: black;
+
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+
+.movie{
+    color:var(--wht);
+    font-size: 20px;
+}
+
+header i{
+    margin-right: 8px;
+}
+
+.fa-camera-movie{
+    color:red;
+}
+
+ul{
+  
+    column-gap: 100px;
+    display: flex;
+ 
+}
+
+li{
+    list-style: none;
+    position: relative;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--wht);
+    font-size: 20px;
+
+}
+
+ul li a::after{
+content: "";
+width: 0;
+height: 2px;
+background-color: red;
+
+position: absolute;
+bottom: -5px;
+left: 0px;
+
+transition: 0.2s;
+}
+
+h1{
+    padding: 10px;
+}
+
+
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+.cover{
+    position: relative;
+
+    height: 80vh;
+
+}
+
+.image1{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    z-index: -2;
+    opacity: 0.9;
+   
+
+    object-fit: cover;
+    object-position: center;
+   
+}
+
+.series{
+    height: 100vh;
+    color: var(--wht);
+    font-weight: 900;
+    padding: 100px;
+    text-shadow: 5px 5px 15px yellow;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.play{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+.fa-play-circle{
+    font-size: 60px;
+    color: red;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.fa-play-circle:hover{
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+
+.bar{
+    width: 50px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: var(--red);
+}
+
+.barcontainer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar2,.bar1,.bar3{
+    transition: all 0.5s ease-in-out;
+}
+
+.hidebar2{
+    opacity: 0;
+}
+
+.changebar1{
+    transform: rotate(45deg) translate(10px,3px);
+}
+
+.changebar3{
+    transform: rotate(-45deg) translateX(6px);
+}
+
+.extranav{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+    display: none;
+}
+
+.extranav ul {
+    column-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section{
+    column-width: 400px;
+    column-count: 3;
+}
+
+
+.image2{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+    transition: 0.3s;
+}
+
+.section,.this{
+    color: var(--wht);
+}
+
+
+.this{
+    max-width:  600px;
+    margin: auto;
+    text-shadow: 3px 3px 15px var(--red);
+    font-family: 'Lemon', serif;
+}
+
+
+.section .moviecontainer div{
+    font-size: 25px;
+    font-weight: 500px;
+    padding: 10px;
+    text-align: center;
+}
+
+.image2:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 15px white;
+}
+
+.moviecontainer:hover{
+   color: var(--vio);
+}
+
+.button{
+    background-color:var(--wht);
+    color:var(--wht)
+}
+
+.foremail{
+    max-width: 900px;
+    padding: 20px;
+    margin:30px auto 30px auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.foremail input{
+    width: 500px;
+    padding:5px 10px;
+    border-radius: 5px;
+    border:none;
+}
+
+.foremail input:focus{
+    
+    box-shadow: 0px 0px 55px var(--vio);
+}
+
+.btn-danger{
+    margin-left: 10px;
+}
+
+.footer{
+   padding: 30px 50px;
+   
+   display: flex;
+   justify-content: space-between;
+}
+
+
+
+
+.footer a i{
+    color: var(--red);
+    font-size: 25px;
+    margin-right: 10px;
+    transition: 0.3s;
+
+    border: 3px solid red;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: yellow;
+
+}
+
+
+.footer a i:hover{
+    transform: scale(1.2);
+    filter:brightness(1.7);
+
+}
+
+.final{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+
+@media (max-width:967px) {
+    nav{
+        display: none;
+    }
+    .barcontainer{
+        display: block;
+    }
+}
+
+@media (max-width:650px) {
+    .foremail form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foremail form .btn-danger{
+        margin-top: 20px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    
+}
+
+
+
+

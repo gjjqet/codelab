@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selector</title>
+        <style>
+            table{margin-top: 30px;}
+        </style>
+    </head>
+    <body>
+
+        <p class="paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo optio obcaecati odio enim iure est, numquam quod ipsum ex sint, officia non accusantium molestiae. Quasi architecto perferendis ab a minus.
+        </p>
+        <p class="secondp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta accusantium sint laborum dolorum unde dolor delectus, dolore pariatur minima neque et voluptatem aspernatur ad iusto culpa molestias. Quas, excepturi hic.
+        </p>
+        <p class="thirdp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae alias eveniet consectetur, quam nobis ducimus molestias! Dolorum nostrum quas mollitia iusto a repellat. Autem neque harum deserunt cupiditate. A.
+        </p>
+
+        <ul>
+           <li>apple</li>
+           <li>orange</li>
+           <li>pear</li>
+           <li>watermelon</li>
+           <li>pomelo</li>
+        </ul>
+
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <a href="https://www.youtube.com">You Tube</a>
+        <a href="https://www.bbc.com/news" target="_self">BBC News</a>
+
+
+        <table border="1">
+            <thead>
+               <th>Name</th>
+               <th>Address</th>
+               <th>City</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>apple</td>
+                    <td>orange</td>
+                    <td>pear</td>
+                </tr>
+                <tr>
+                    <td>watermelon</td>
+                    <td>pomelo</td>
+                    <td>pomegranate</td>
+                </tr>
+
+            
+            </tbody>
+        </table>
+
+        <input type="button" value="Sumit"/>
+        <div>
+            <button>
+                apple
+            </button>
+            <button>orange</button>
+        </div>
+   
+
+
+        <script src="jquery.min.js"></script>
+        <script type="text/javascript">
+            $("ul li:first").css("color","green");
+            $("ul li:nth-child(2)").css("color","red");
+            $("ul li:nth-of-type(odd)").css("color","blue");
+            $("a[target=_blank]").css("color","green");
+            $("a[target!=_blank]").css("color","red");
+            $("tr:nth-of-type(even)").css("color","blue");
+            $(":button").css("background-color","red")
+        </script>
+    </body>
+</html>

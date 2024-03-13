@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Form</title>
+        <link rel="stylesheet" href="registerform.css" type="text/css">      
+    </head>
+    <body>
+        <div class="container">
+            
+            <form class="form-group">
+                <h1>Registration</h1>
+            <hr/>
+                <div class="radiotag">
+                    <input type="radio" value="p" name="purpose" id="personal" class="control" checked/><label for="personal">Personal</label>
+                    <input type="radio" value="c" name="purpose" id="company" class="control"/><label for="company">Company</label>
+                </div>
+                <hr/>
+
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email"/>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name"/>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                <hr/>
+
+                <div class="radiotag">
+                    <input type="radio" name="gender" id="male" class="control" checked/><label for="male">Male</label>
+                <input type="radio" name="gender" id="female" class="control"><label for="female">Female</label>
+                </div>
+                <hr/>
+
+                <span>By clicking Register,you agree on our</span> <a href="#"> Privacy Policy</a><div class="web"><a href="#" class="">For W3Docs</a></div>
+
+                <button type="button" name="button" id="button" class="btn">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
+
+<!-- :focus
+     :active
+     :hover
+     :visited
+ -->

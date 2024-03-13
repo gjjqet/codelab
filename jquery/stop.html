@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button class="button" style="padding: 5px;background-color: red;border-radius: 3px;">Click to stop</button>
+        <div class="slide" style="width: 400px;background-color: lightgray;border-radius: 5px;padding: 15px;">Click to show</div>
+        <div class="panel" style="width: 400px;background-color: lightgray;border-radius: 5px;padding: 15px;height: 200px;grid: center;display: none;">
+            <div style="grid: center;">Hello Welcome To My World</div>
+        </div>
+
+        <script src="jquery.min.js"></script>
+        <script type="text/javascript">
+            $(".button").click(()=>{
+                $(".panel").stop()
+            })
+            $(".slide").click(()=>{
+                $(".panel").slideDown(5000)
+            })
+        </script>
+    </body>
+</html>

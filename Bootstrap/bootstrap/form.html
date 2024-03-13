@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Utilities</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" type="text/css">
+         
+    </head>
+    
+    <body>
+
+
+        <div class="m-5">
+
+            <form action="" method="" class="w-25">
+                
+                <fieldset>
+                    <legend>Register Form</legend>
+                    <div>
+                        <label for="firstname" class="form-label">First Name</label>
+                        <input type="text" name="firstname" id="firstname" class="form-control " placeholder="Enter Your First Name" autocomplete="off">
+                    </div>
+                    <div class="mt-3">
+                        <label for="lastname" class="form-label">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" class="form-control " placeholder="Enter Your Last Name" autocomplete="off">
+                    </div>
+                    <div class="mt-3">
+                        <label for="password">Password</label>
+                        <input type="password" name="pass" id="password" class="form-control  " placeholder="Enter Your Password" minlength=8>
+                    </div>
+                    <div class="mt-3">
+                        <input type="checkbox" name="fruit" id="checkbox" class="form-check-input" value="ap">
+                        <label for="checkbox" class="form-check-label">Apple</label>
+                        <input type="checkbox" name="fruit" id="orange" class="form-check-input" value="or">
+                        <label for="orange" class="form-check-label">Orange</label>
+                    </div>
+                    <div class="mt-3">
+                        <input type="radio" name="gender" id="male" class="form-check-input" value="m" required>
+                        <label for="male" class="form-check-label">Male</label>
+    
+                        <input type="radio" name="gender" id="female" class="form-check-input" value="f" required>
+                        <label for="female" class="form-check-label">Female</label>
+    
+                    </div>
+                    <div class="mt-3">
+                        <label for="colo">Choose your favourite color</label>
+                        <input type="color" name="favcolor" id="color" class="form-control-color" value="red">
+                    </div>
+
+                    <div class="mt-3">
+                        <select name="choose" id="choose" class="form-select " size="5">
+                            <option value="choose" disabled >Choose Fav Fruit</option>
+                            <option value="apple">Apple</option>
+                            <option value="orange">Orange</option>
+                            <option value="pomelo">Pomelo</option>
+                            <option value="water">Watermelon</option>
+                            <option value="lemon">Lemon</option>
+                        </select>
+                    </div>
+
+                    <div class="mt-3">
+                        <label for="country">Choose Country</label>
+                        <input type="text" name="country" id="country" list="hither" class="form-control " >
+                        <datalist id="hither" >
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="China">China</option>
+                            <option value="Korea">Korea</option>
+                            <option value="Thailand">Thailand</option>
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label for="videofile"></label>
+                        <input type="file" name="videofile" id="videofile" class="form-control " multiple>
+                    </div>
+
+                    <div class="form-check form-check-inline mt-3">
+                        <input type="radio" name="gender" id="2" class="form-check-input">
+                        <label for="2">Male</label>
+                        
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="gender" id="1" class="form-check-input">
+                        <label for="1">Female</label>
+                    </div>
+
+                   <div class="form-switch">
+                        <input type="checkbox" name="switch" id="switch" class="form-check-input" role="switch">
+                        <label for="switch">Change Another Page</label>
+                   </div>
+
+                   <input type="range" name="forrang" id="forrang" class="form-range " value="50" step="20" disabled>
+
+                   <div class="mt-5 input-group ">
+                      <div class="input-group-text ">First Name</div>
+                      <input type="text" name="group" id="group" class="form-control">
+                   </div>
+
+                   <div class="input-group  mt-3">
+                      <input type="text" name="group2" id="group2" class="form-control">
+                      <div class="input-group-text">Last Name</div>
+                   </div>
+
+                   <div class="input-group mt-3 ">
+                       <div class="input-group-text">Hi</div>
+                       <input type="tel" name="" id="" class="form-control">
+                       <div class="input-group-text">There</div>
+                   </div>
+
+                   <div class="input-group  mt-3 flex-wrap">
+                       <input type="text" name="" id="" class="form-control" placeholder="First Name">
+                       <div class="input-group-text">Hey</div>
+                       <input type="text" name="" id="" class="form-control" placeholder="Last Name">
+                   </div>
+
+                   <div class="input-group mt-2">
+                      <div class="input-group-text">Hi I am Lucky</div>
+                      <textarea name="" id="" cols="" rows="3"></textarea>
+                   </div>
+
+                   <div class="input-group  mt-3">
+                       <div class="input-group-text">
+                           <input type="checkbox" name="" id="" class="form-check-input">
+                       </div>
+                       <input type="text" name="" id="" class="form-control">
+                   </div>
+
+                   <div class="input-group  mt-3">
+                      <div class="input-group-text">
+                          <input type="radio" name="" id="" class="form-check-input">
+                      </div>
+                      <input type="text" name="" id="" class="form-control">
+                   </div>
+
+                   <div class="input-group mt-3">
+                       <div class="input-group-text">First Name</div>
+                       <input type="text" name="" id="" class="form-control">
+                       <input type="text" name="" id="" class="form-control">
+                   </div>
+
+                   <div class="input-group mt-3">
+                   
+                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="" id="" class="form-control">
+                    <div class="input-group-text">First Name</div>
+                   </div>
+
+                   <di class="input-group mt-3">
+                       <button class="input-group-text btn btn-outline-danger" type="button" >Cancle</button>
+                       <button class="input-group-text btn btn-outline-info" type="button">Submit</button>
+                       <input type="text" name="" id="" class="form-control">
+                   </di>
+
+
+                   <div class="input-group mt-3">
+                        <button type="button" class="input-group-text dropdown-toggle btn btn-outline-danger" data-bs-toggle="dropdown">Dropdown</button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">apple</li>
+                            <li class="dropdown-item">orange</li>
+                            <li class="dropdown-item">Watermelon</li>
+                            <li class="dropdown-item">lemon</li>
+                        </ul>
+                        <input type="text" class="form-control"/>
+                  </div>
+
+
+                 <div class="input-group mt-3">
+                    <label for="" class="input-group-text">Option...</label>
+                    <select class="form-select">
+                        <option value="choose">Choose one</option>
+                        <option value="one">one</option>
+                        <option value="two">two</option>
+                        <option value="three">three</option>
+                    </select>
+                 </div>
+
+                 <div class="input-group mt-3">
+                    <input type="text" list="list" class="form-control"/>
+                    <label class="input-group-text">Datalist</label>
+                    <datalist id="list">
+                        <option value="choose">Choose</option>
+                        <option value="apple">apple</option>
+                        <option value="orange">orange</option>
+                        <option value="banana">banana</option>
+                    </datalist>
+                 </div>
+
+
+                 <div class="form-floating mt-3">
+                    
+                    <input type="text" name="forfloat" id="forfloat" class="form-control" placeholder="Enter your address">
+                    <label for="forfloat">Enter Address</label>
+                 </div>
+
+                 <div class="form-floating">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="enter " >
+                    <label for="password">Enter Password</label>
+                 </div>
+
+                 <div class="form-floating">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter email" value="tet@gmail.com">
+                    <label for="email">Enter your email</label>
+                 </div>
+
+                 <div class="form-floating mt-3">
+                    <input type="password" name="pass" id="pass" class="form-control" placeholder="Enter password" value="2587654468">
+                    <label for="pass">Hi write password</label>
+                 </div>
+
+                 <div class="form-floating mt-3">
+                    <input type="text" name="invalid" id="invalid" class="form-control is-invalid" placeholder="ainehroepo" value="Enter your email">
+                    <label for="invalid">Hey write email</label>
+                 </div>
+
+                 <div class="form-floating mt-3">
+                    <textarea name="bio" id="bio" cols="30" rows="5" class="form-control" placeholder="hiheythere"></textarea>
+                    <label for="bio">Biography</label>
+                 </div>
+
+                 <div class="form-floating mt-3">
+                    <select name="opt" id="opt" class="form-select">
+                        <option value="country">Choose one</option>
+                        <option value="thai">Thai</option>
+                        <option value="china">China</option>
+                    </select>
+                    <label for="opt">Choose Country</label>
+                 </div>
+
+                 <div class="input-group mt-3">
+                    <div class="input-group-text">@</div>
+                    <div class="form-floating">
+                        <input type="text" name="hi" id="hi" class="form-control" placeholder="comment">
+                        <label for="hi">Comment</label>
+                    </div>
+                 </div>
+
+                 <div class="input-group mt-3">
+                    <div class="input-group-text">@</div>
+                    <div class="form-floating">
+                        <input type="text" name="change" id="change" placeholder="Enter Change" class="form-control is-invalid">
+                        <label for="change">Choose one</label>
+                    </div>
+                 </div>
+
+                 <input type="text" name="hi" id="hy" class="form-control mt-3 is-valid" value="Mark">
+
+
+                    
+                    <button type="submit" class="btn btn-outline-primary mt-3 d-block">Register</button>
+    
+                </fieldset>
+                
+            </form>
+          
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        
+    </body>
+</html>
+
+<!-- 
+    text-color
+    bg-color
+    width(w)
+    height(h)
+    border
+    margin(m,ms,me,mt,me,mx,my,auto,mx-auto)
+    padding(p,ps,pe,pt,pe,px,py)
+    text(text-center,text-end,text-start)
+    text-decoration-none,text-decoration-underline,text-decoration-line-through
+
+    ---------------------------------------------------------------------------------------------------------
+
+    rounded(rounded,rounder-start,rounded-circle,rounded-pill);
+    boder(border-opacity-25,border-4)
+    font-size(fs-1 to 6)
+    font-weight(fw)
+    line-height(lh)
+
+    -----------------------------------------------------------------------------------------------------------
+
+    DISPLAY
+
+    d-block;
+    d-flex;
+    d-inline;
+    d-inline-block;
+    d-none; **********
+
+    invisible *********
+
+    D-FLEX  
+
+    flex-colum
+    start
+    end
+    center
+    between,evenly,around
+
+    sketch************
+    strength***********
+
+    align-self**********
+    top
+    center
+    end
+
+
+    ------------------------------------------------------------------------------------------------------
+
+    shadow
+    float
+    overflow
+    opacity
+
+    -------------------------------------------------------------------------------------------------------
+
+    FORM
+
+    1.form-control(form-control-lg,form-control-sm)
+    2.form-label
+
+    3.form-check-input
+    4.form-check-label
+
+    5.disabled
+    6.readonly
+
+    Selected Option
+
+    7.form-select(size)
+
+    8. type=file(multiple)
+    9. type=radio(form-check,form-check-inline)
+
+    10.switch**********(role-switch,form-switch)
+    11.btn-outline-danger
+    12.range(form-range)
+    13.input-group(input-group,input-group-text)
+    14.dropdown(dropdown-toggle,data-bs-toggle="dropdown",dropdown-menu,dropdown-item)
+    15.folating(form-floating,required placehoder*******  , is-invalid ,is-valid)
+    16.validation
+   
+ -->

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            
+            function Person(name,age,address){
+                this.todayname=name;
+                this.age=age;
+                this.address=address;
+                this.people=function(){
+                    console.log("I'm people")
+                }
+            };
+
+            Person.prototype.final=function (){
+                console.log("I'm final")
+            }
+
+            // const person=new Person("Aye Aye",25,"Yangon");
+
+            // console.log(person.todayname);
+            // person.people();
+            // person.final();
+
+            function Student(name,age,address,city){
+                Person.call(this,name,age,address);
+                this.city=city;
+            } ;
+
+            Student.prototype=Object.create(Person.prototype);
+
+            const students=new Student("Aye Aye",25,"Yangon");
+            console.log(students.todayname);
+            console.log(students.age);
+            students.final();
+
+
+
+            //Class And Extends
+
+            class Male{
+                constructor(item,price,name){
+                    this.item=item;
+                    this.price=price;
+                    this.name=name;
+                    this.extra=function(){
+                        console.log("I'm extra")
+                    }
+                };
+
+                apple(){
+                    console.log("I'm apple")
+                };
+
+                static orange(){
+                    console.log("I'm orange static")
+                }
+            };
+
+            Male.prototype.final=function(){
+                console.log("I'm final")
+            }
+
+            //  const male=new Male("candy",350,"kyaw kyaw");
+            // // console.log(male.item);
+            // // male.apple();
+            // // male.final();
+
+            // male.apple();nstructor(item,price,name,date){
+            
+            const female=new Female("candy",350,"kyaw kyaw",22);
+
+            console.log(female.item);
+            console.log(female.name);
+            female.final();
+
+
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagination</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" type="text/css"/>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg m-3 bg-body-tertiary">
+            <div class="container">
+                <div class="navbar-brand">Sarctet</div>
+                <button type="button" class="navbar-toggler" data-bs-target="#apple" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="apple">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">About Us</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <ul class="nav  nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Service</a>
+            </li>
+        </ul>
+
+        <hr/>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#pear">Offcanvas</button>
+
+        <div class="offcanvas offcanvas-start" id="pear">
+            <div class="offcanvas-header">
+                <h5>Hello World</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, alias.</p>
+
+                <button type="button" class="dropdown-toggle btn btn-secondary" data-bs-toggle="dropdown">Dropdown</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-link">apple</li>
+                    <li class="dropdown-link">orange</li>
+                    <li class="dropdown-link">pear</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr/>
+
+        <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a href="" class="page-link active" >Previous</a></li>
+                <li class="page-item"><a href="" class="page-link">1</a></li>
+                <li class="page-item"><a href="" class="page-link">2</a></li>
+                <li class="page-item"><a href="" class="page-link active">Next</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="pagination pagination-lg justify-content-center">
+                <li class="page-item"><a href="" class="page-link">&laquo;</a></li>
+                <li class="page-item"><a href="" class="page-link">1</a></li>
+                <li class="page-item"><a href="" class="page-link">2</a></li>
+                <li class="page-item"><a href="" class="page-link">&raquo;</a></li>
+            </ul>
+        </nav>
+
+        <hr/>
+
+        <div class="card w-25 m-5">
+            <img src="../../image/zhao.jpg" class="" alt="">
+            <div class="card-body">
+                <h3 class="card-title">I love zhao lusi</h3>
+                <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tenetur inventore quod assumenda qui soluta.</div>
+                <button type="button" class="btn btn-danger m-2">Love You</button>
+            </div>
+        </div>
+
+        <div class="card w-25 m-5">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEWAgICQdD0xAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII=" alt="">
+            <div class="card-body">
+                <h5 class="placeholder-glow">
+                    <span class="col-5 placeholder"></span>
+                </h5>
+                <div class="placeholder-glow">
+                    <span class="col-4 placeholder"></span>
+                    <span class="col-7 placeholder"></span>
+                    <span class="col-6 placeholder"></span>
+                    <span class="col-3 placeholder"></span>
+                    <span class="col-6 placeholder"></span>
+                    <button type="button" class="btn bg-primary placeholder placeholder-glow col-6 mt-3"></button>
+
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="pagination">
+                <li class="page-item"><a href="" class="page-link active">Previous</a></li>
+                <li class="page-item"><a href="" class="page-link">1</a></li>
+                <li class="page-item"><a href="" class="page-link">2</a></li>
+                <li class="page-item"><a href="" class="page-link">next</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="pagination">
+                <li class="page-item"><a href="" class="page-link">&laquo;</a></li>
+                <li class="page-item"><a href="" class="page-link">1</a></li>
+                <li class="page-item"><a href="" class="page-link">2</a></li>
+                <li class="page-item"><a href="" class="page-link">&raquo;</a></li>
+            </ul>
+        </nav>
+
+            <div class="card w-25 m-5">
+                <img src="../../image/zhao.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">I love zhao lusi</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, suscipit!</p>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">apple</li>
+                        <li class="dropdown-item">orange</li>
+                        <li class="dropdown-item">pear</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="card w-25 m-5">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEWAgICQdD0xAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII=" alt="">
+                <div class="card-body">
+                    <div class="card-title placeholder-glow">
+                        <span class="col-5 placeholder"></span>
+                    </div>
+                    <div class="placeholder-glow">
+                        <span class="col-6 placeholder "></span>
+                        <span class="col-6 placeholder"></span>
+                        <span class="col-5 placeholder"></span>
+                        <span class="col-4 placeholder"></span>
+                        <span class="col-7 placeholder"></span>
+                        <button type="button" class="btn bg-primary col-6 placeholder"></button>
+                    </div>
+                </div>
+            </div>
+
+
+       
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+<!-- 
+    nav , pagination , pagination-lg
+    ul , page-item , justify-content-center
+    li , page-link
+ -->

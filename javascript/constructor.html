@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            const arrys=["apple","orange","watewelom"];
+            const arrys2=new Array("pear","watermelon","grape");
+            
+            const obj1={
+                name:"aung aung",
+                age:"25",
+                region:"Mandalay"
+            };
+
+            const obj2=new Object("orange");
+            console.log(obj2);
+
+            const obj3=new Object();
+            obj3.name="aungaung";
+            obj3.age=25;
+
+            console.log(obj3);
+
+
+            const obj4=Object();
+            obj4.customername="Aye Aye";
+            obj4.date=31;
+
+            console.log(obj4);
+
+            const obj5=new Object();
+            obj5.name="Kyaw Kyaw";
+            obj5.grade=5;
+
+            console.log(obj5);
+
+            const orange=()=>{
+                console.log("I'm orange")
+            };
+
+            orange();
+
+            const pear=function(){
+                console.log("I'm pear")
+            };
+
+            pear();
+
+
+            function water(){
+                console.log("I'm water")
+            };
+
+            water();
+
+            const melon=function(){
+                console.log("I'm melon")
+            };
+
+            melon();
+
+           function popop(){
+            console.log("I'm pop")
+           };
+
+           popop();
+
+           const pop=()=>{
+            console.log(`I'm ginsl ${this.name}`)}
+
+           const ovje={
+            name:"Aung Aung",
+            age:25,
+            final(){
+                console.log("I'm final")
+            }
+
+           };
+           ovje.final();
+
+
+           function Student(name,age,grade,address){
+                this.hisname=name;
+                this.age=age;
+                this.grade=grade;
+                this.address=address
+           };
+
+           const students=new Student("Aung Aung",9,5,'Mandalay');
+
+           console.log(students.hisname);
+           console.log(students.age);
+
+           console.log(students);
+
+           const students2={
+            name:"Aye Aye",
+            age:34,
+            grade:45,
+            address:"Yangon"
+           };
+
+           console.log(students2);
+           console.log(students2.age);
+
+          
+
+           
+
+        </script>
+    </body>
+</html>

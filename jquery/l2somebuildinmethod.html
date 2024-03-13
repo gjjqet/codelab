@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flower</title>
+        <style>
+
+            .buttoncontainer{
+                margin-left: 40px
+            }
+
+            .buttoncontainer button{
+                padding: 7px;
+                margin-left: 5px;
+                border-radius: 3px;
+            }
+            
+            .rose{
+                margin-top: 20px;
+                width: 300px;
+                display: none;
+            }
+
+            .flower{
+                width: 400px;
+                display: none;
+            }
+
+            .lotus{
+                display: none;
+                width: 400px;
+            }
+
+            .apple{
+                width: 400px;
+            }
+
+            .imagecontainer{
+                width: 400px;
+                padding: 20px;
+                background-color: steelblue;
+            }
+
+            .button{
+                padding: 8px;
+                border-radius: 3px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="buttoncontainer">
+            <button class="show">show</button>
+            <button class="hide">hide</button>
+            <button class="toggle">toggle</button>
+        </div>
+        <img src="../image/rose.webp" class="rose" alt="flower"/>
+        <img src="../image/flower2.jpg" class="flower" alt="flower2"/>
+        <img src="../image/lotus.jpg" class="lotus" alt="lotus"/>
+
+        <div class="imagecontainer">
+            <img src="../image/apple.webp" class="apple" alt="apple"/>
+        </div>
+        
+        <button class="button">Click</button>
+
+        <div class="secondimage">
+            <img src="../image/cover2.jpg" style="width: 400px;"/>
+        </div>
+        <button class="button2" style="padding: 5px;background-color: red;">Click Me</button>
+
+        <script src="jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(()=>{
+                $(".show").click(()=>{
+                    $(".rose").show("slow");
+                })
+                $(".hide").click(()=>{
+                    $(".rose").hide("slow");
+                    $(".flower").hide("slow")
+                })
+                $(".toggle").click(()=>{
+                    $(".rose").toggle("slow");
+                    $(".flower").hide("slow")
+                })
+                $(".rose").mouseleave(()=>{
+                    
+                        $(".flower").slideDown("quick");
+                        $(".lotus").hide("slow")
+                
+                })
+                $(".rose").mouseenter(()=>{
+                    $(".flower").hide("slow",()=>{
+                        $(".lotus").slideDown("quick")
+                    })
+                })
+                $(".button").click(()=>{
+                    $(".imagecontainer").animate({
+                        marginLeft:"500px",
+                        height:"300px", 
+                        backgroundColor:"red"
+                    },"quick")
+                })
+
+                $(".button2").click(()=>{
+                    $(".secondimage").animate({
+                        marginLeft:"300px",
+                        width:"200px",
+                        
+                    },5000)
+                })
+
+
+            })
+          
+        </script>
+    </body>
+</html>
+
+<!-- 
+    selector
+    events
+ -->
+
+
+
+<!-- 
+    $(document).ready(()=>{})
+    show()
+    hide()
+    toggle()
+ -->

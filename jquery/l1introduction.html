@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1 id="test">Testing Jquery</h1>
+        <h2 id="test2">Hi I am Jquery</h2>
+        
+    </body>
+    <script src="jquery.min.js"></script>
+        <script type="text/javascript">
+            // document.getElementById("test").innerHTML="Hello I am Javascript"
+
+            // document.getElementById("test").addEventListener("click",()=>{
+            //     document.getElementById("test").style.display="none"
+            // })
+
+            $("#test").click(()=>{
+                $("#test").hide(2000,()=>{
+                    $("#test2").html("Hi I am happy learning jquery")
+                })
+            })
+
+        //    $("#test").html("Hello I am Jquery");
+        </script>
+</html>

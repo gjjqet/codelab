@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Filter</title>
+        <style>
+            .container{
+                display: flex;
+                justify-content: center;
+            }
+
+            .container img{
+                filter: blur(0px);
+                transition: 0.5s;
+            }
+
+            .container img:hover{
+                filter: drop-shadow(10px 30px 15px red);
+               
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="../image/sneaker2.webp"/>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            const fruit=[];
+
+            fruit[0]="apple";
+            fruit[1]="orange";
+            fruit[2]="watermelon";
+
+            console.log(fruit)
+               
+            //Associateed array
+             const home=[];
+             home["name"]="maung maung";
+             home["age"]="25";
+             home['gender']="male";
+             console.log(home);
+
+             console.log(Array.isArray(home));
+             console.log(home.name);
+             console.log(home["age"]);
+
+
+             //Object 
+             const object1={
+                name:"Kyaw Kyaw",
+                age:"25",
+                gender:"Male",
+                greeting(){
+                    console.log(`Hello ${this.name}`)
+                }
+             }
+
+             console.log(object1.greeting())
+
+
+             const num1=[1,2,3];
+             const num2=[4,5,6];
+             const num3=num1.concat(2,3);
+             const num4=num3.concat(4,5,9,8);
+             console.log(num4);
+             console.log(num3);
+
+             console.log(...num3,...num4);
+
+             const array=[2,4,6,8];
+             let apple=array.map((n)=>{
+                return n*2
+             })
+
+             console.log(apple)
+
+
+             const arr2=[4,16,25,9];
+             const orange=arr2.map(Math.sqrt);
+             console.log(orange);
+
+             const water=arr2.map((n)=>{
+                return n+2
+             });
+
+
+             console.log(Math.floor(Math.random()*100))
+
+             console.log(water);
+
+
+             const arr3=[1,2,];
+            //  const a=arr3[0];
+            //  const b=arr3[1];
+
+            [a,b]=[1,2]
+            console.log(a,b)
+
+        function get([a,b]){
+                console.log(a,b)
+            }
+
+            get(arr3)
+
+
+
+            const num8=[1,2,3];
+            const num9=[...num8,4];
+            console.log(num9);
+            const num10=[...num9,5,6];
+            console.log(num10);
+
+            const num11=num10.concat(7,8);
+            console.log(num11);
+
+            [a,b,c]=num11;
+            console.log(a,b,c);
+            const numb=[30,40]
+
+            const colthes=function([d,e]){
+                 console.log(d+e)
+            }
+
+            colthes(numb);
+
+            const object2={
+                name:"Aye Aye",
+                age:25,
+                city:"Yangon",
+                apple(){
+                    console.log(`${this.name}`)
+                }
+               
+            };
+
+            object2.apple();
+            // apple(){
+            //         console.log(`${this.name}`)
+            //     }
+
+
+            
+             
+             
+        </script>
+    </body>
+</html>
+
+
+
+<!-- 
+    this.name
+    associate array
+    ... (array concat)
+    map(function (n){})
+    [a,b,c,d]=array
+ -->
+
+
+ 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            const students={
+                name:'Aung Aung',
+                age:25,
+                city:"Mandalay"
+            };
+
+            const students2=Object.create(students);
+            students2.name="Aye Aye";
+            students2.age=9;
+            students2.address="Yangon";
+            console.log(students2);
+
+            const students3=Object.create(students,
+            {name:{value:"Kyaw Kyaw"},
+              age:{value:25},
+              father:{value:"U Mya"}
+        },
+            );
+
+            console.log(students3);
+
+
+            function Person(name,age,address){
+                this.name=name;
+                this.age=age;
+                this.address=address;
+            };
+
+            Person.prototype.final=function(){
+                return `My daughter name is ,${this.name}`
+            };
+
+            Person.prototype.fruit=function(){
+                return "My fav fruit is  banana"
+            }
+
+            // const result=new Person("Su Su",25,"Mandalay");
+            // console.log(result.name);
+            // console.log(result.final());
+            // console.log(result.fruit());
+
+            function Person2(name,age,address,mother){
+                Person.call(this,name,age,address,mother)
+            }
+
+            Person2.prototype=Object.create(Person.prototype);
+            const person2=new Person2("Aye Aye",22,"Pyi","Daw Mya");
+
+            console.log(person2.name);
+            console.log(person2.fruit());
+
+
+            const students4={
+                name:"Apple",
+                address:"Yangon",
+                country:"Myanmar"
+            };
+
+            const students5=Object.create(students4);
+            students5.mother="Daw Mya"
+
+            console.log(students5);
+
+            const students6=Object.create(students4,{
+                name:{value:"Kyaw Kyaw"},
+                age:{value:345}
+            });
+            console.log(students6)
+
+
+            
+
+              
+        </script>
+    </body>
+</html>

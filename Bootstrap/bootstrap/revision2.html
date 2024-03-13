@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" type="text/css">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+        <button class="btn btn-danger" style="margin-top: 70px;" data-bs-toggle="popover" data-bs-container="body" data-bs-placement="top" data-bs-content="You need to know about this">Top popover</button>
+        <button class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You need to answer this">Click</button>
+        <button class="btn btn-info" data-bs-toggle="popover" data-bs-container="body" data-bs-placement="bottom" data-bs-content="I love popover">Love</button>
+        <button type="button" class="btn btn-warning" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="I love code">Code</button>
+
+        <hr/>
+
+        <div style="display: flex;margin-left: 20px;height: 20px;align-items: center;">
+            <h3>PHP</h3>
+            <div class="first" style="width: 200px;height: 10px;background-color: blue;border-bottom-left-radius: 5px;border-top-left-radius: 5px;"></div>
+            <div class="second" style="width: 500px;height: 10px;background-color:gray;border-top-right-radius: 5px;border-bottom-right-radius: 5px;"></div>
+        </div>
+
+        <div style="display: flex;margin-left: 20px; margin-top: 20px;height: 20px;align-items: center;">
+            <h3>Javascript</h3>
+            <div class="first" style="width: 400px;height: 10px;background-color: blue;border-bottom-left-radius: 5px;border-top-left-radius: 5px;"></div>
+            <div class="second" style="width: 300px;height: 10px;background-color:gray;border-top-right-radius: 5px;border-bottom-right-radius: 5px;"></div>
+        </div>
+
+        <hr/>
+
+        <div class="progress w-50 m-3" style="height: 15px;" aria-valuenow="25" aria-valuemax="100" aria-valuemin="0">
+            <div class="progress-bar" style="width: 25%;"></div>
+        </div>
+
+        <div class="progress w-50 m-3" style="height: 15px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 50%;background-color: yellow;color:black">50%</div>
+        </div>
+
+        <div class="progress-stacked w-50" style="height: 15px;">
+            <div class="progress" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="progress" aria-valuemax="100" aria-valuemin="0" aria-valuenow="15" style="width: 15%;">
+                <div class="progress-bar bg-success"></div>
+            </div>
+            <div class="progress " aria-valuemax="100" aria-valuemin="0" aria-valuenow="15" style="width: 15%;">
+                <div class="progress-bar bg-danger"></div>
+            </div>
+        </div>
+        <div class="progress w-50 m-3" style="height: 15px;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 50%;"></div>
+        </div>
+
+
+        <nav class="navbar w-50 bg-info " style="margin: auto;" id="popover">
+            <div class="navbar-brand">Navbar</div>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="#first" class="nav-link">Heading 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#second" class="nav-link">Heading 2</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#third" class="dropdown-item">Heading 3</a></li>
+                        <li><a href="#fourth" class="dropdown-item">Heading 4</a></li>
+                        <li><a href="#fifth" class="dropdown-item">Heading 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- <div style="width: 500px;height: 400px;border:2px solid black;margin: auto;overflow: scroll;" data-bs-smooth-scroll="true" class="scrollspy-example" data-bs-target="#popover">
+            <h2 id="first">Heading 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus reprehenderit incidunt atque id culpa explicabo assumenda sunt nemo provident, eum molestias, et porro. Rem, dolore. Illo ea deserunt assumenda.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur laborum sint recusandae neque sed molestias vero quos id, sequi, dicta ratione quaerat, suscipit sunt corrupti! Similique quia officia laboriosam neque.
+            </p>
+            <h2 id="second">Heading 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laboriosam tempora harum voluptatibus delectus qui deleniti et incidunt aliquam voluptate, praesentium sunt quaerat perferendis minima neque inventore aut! At, aliquam.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iusto natus fuga dolore deleniti repellendus asperiores labore provident, aut nam officiis necessitatibus corrupti blanditiis! Ipsum, est quaerat? Dolore, nesciunt quaerat?
+            </p>
+            <h2 id="third">Heading 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quae. Tenetur id deserunt, amet quidem nam nulla quibusdam delectus! Omnis nostrum libero recusandae ut ab voluptatibus, provident minima nam laboriosam?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ab iure fuga ipsum veniam, vitae voluptate soluta eos rerum nemo. Ratione optio quae mollitia dolorem repudiandae non earum cumque quos?
+            </p>
+            <h2 id="fourth">Heading 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, eveniet iusto velit molestiae voluptas alias officia, optio inventore sint expedita rem at rerum in animi maiores numquam debitis accusantium enim.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dicta mollitia illo, quos vel, aliquid error, provident doloremque libero vero ipsum excepturi? Rem dicta placeat eius sunt odio maiores obcaecati?
+            </p>
+            <h2 id="fifth">Heading 5</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, perspiciatis obcaecati labore id unde nobis animi omnis, laudantium at non quia incidunt sed! Incidunt qui aut unde, ipsam tempora perferendis?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit expedita, eaque iste ut quidem error reiciendis consectetur quod molestiae neque? Atque nam, magnam pariatur nesciunt beatae itaque officiis molestiae repellat.
+            </p>
+        </div> -->
+
+        <hr/>
+
+
+        <div class="spinner-border">
+            <span class="visually-hidden">loading</span>
+        </div>
+        <div class="spinner-border text-danger">
+            <span></span>
+        </div>
+        <div class="spinner-border spinner-border-lg text-warning">
+            <span></span>
+        </div>
+
+        <hr/>
+
+        <div class="spinner-grow">
+            <div></div>
+        </div>
+
+        <div class="spinner-grow text-danger">
+            <span></span>
+        </div>
+
+        <div class="d-grid" style="place-items: center;">
+            <div class="spinner-border text-danger">
+                <span></span>
+            </div>
+        </div>
+
+       <div class="w-50 d-flex justify-content-between">
+          <strong>Loading...</strong>
+          <div class="spinner-border text-warning"></div>
+       </div>
+
+       <div class="spinner-grow spinner-grow-sm text-danger"></div>
+
+       <button type="button" class="btn btn-primary">
+          <span class="spinner-border spinner-border-sm text-white"></span>
+          <span>Loading..</span>
+       </button>
+
+
+       <button type="button" class="btn btn-outline-danger">
+        <span class="spinner-grow spinner-grow-sm text-success"></span>
+        <span>Loading...</span>
+       </button>
+
+       <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Toast</button>
+       <div class="toast-container position-fixed top-0 bottom-0 p-3">
+          <div class="toast" id="liveToastBtn">
+              <div class="toast-header">
+                <img src="../../image/apple.webp" alt="">
+                <h3>I love this picture</h3>
+                <button type="button" class="btn btn-close" data-bs-dismiss="toast"></button>
+              </div>
+              <div class="toast-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem est laborum enim architecto eius, molestias vero. Voluptatem explicabo tempore architecto?
+              </div>
+          </div>
+       </div> -->
+
+
+       <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="revision2.js"></script>
+    </body>
+</html>

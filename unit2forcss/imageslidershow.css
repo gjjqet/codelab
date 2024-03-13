@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+.container{
+    margin-top: 30px;
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    
+}
+
+
+.image{
+    margin-top: 30px;
+    width: 25%;
+    height: 440px;
+
+    position: absolute;
+    
+}
+
+.fas{
+    color:red;
+    margin-left: 5px;
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 5px 5px 15px green;
+
+    position:absolute;
+}
+
+.fascontainer{
+    width: 25%;
+    height: 440px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}

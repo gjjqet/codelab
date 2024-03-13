@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Border Sizing</title>
+        <style>
+            body{
+               margin: 0;
+               padding: 0;
+             
+            }
+
+            .content{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .container{
+                max-width:600px;
+                min-height: 200px;
+                border:2px solid red;
+                padding:80px;
+
+                /* overflow: scroll; */
+            }
+
+            .container2{
+                width: 200px;
+                height: 200px;
+                border:2px solid black;
+                padding: 80px;
+                box-sizing: border-box;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div class="content">
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore culpa ullam voluptas quasi voluptatibus eius a recusandae saepe qui quibusdam sapiente id illum in quos, dicta est. Iure, mollitia?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquid modi dignissimos, labore beatae eos consequuntur blanditiis, obcaecati sapiente porro alias ratione optio perferendis commodi nulla quasi! Error, numquam expedita!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus voluptates perferendis voluptatem iure, harum deserunt unde natus sequi soluta voluptas. Inventore quae deleniti expedita? Perferendis, facilis. Eaque voluptatem quibusdam fuga.
+            </div>
+            <div class="container2">Apple</div>
+        </div>
+        
+    </body>
+</html>
+
+<!-- 
+    min-height
+    max-width
+    box-sizing
+ -->

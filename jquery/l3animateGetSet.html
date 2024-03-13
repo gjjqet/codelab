@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Some Build Method</title>
+        <style>
+            button{
+                padding: 7px;
+                background-color: red;
+                border-radius: 4px;
+                margin-left: 60px;
+                margin-top: 20px;
+                
+            }
+
+            .rose{
+                width: 300px;
+                margin-top: 20px;
+                position: relative;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="buttoncontainer">
+            <button type="button" class="button">Animate</button>
+        </div>
+        <img src="../image/rose.webp" class="rose"  alt="rose"/>
+
+        <div>
+            <h1>Testing <b>For</b> Get And Set</h1>
+            <input type="text" placeholder="Enter your name"/>
+            <button type="button" class="get">Get</button>
+            <button type="button" class="set">Set</button>
+        </div>
+
+
+        <script src="jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(document).ready(()=>{
+                    $(".button").click(()=>{
+                    $(".rose").animate({
+                        left:"600px",
+                        width:"150px",
+                    },3000,()=>{
+                        $(".rose").hide(1000,()=>{
+                            $(".rose").animate({
+                                left:"-0px",
+                                width:"400px"
+                            },1000,()=>{
+                                $(".rose").show("1000")
+                            })
+                        })
+                    })
+                });
+
+                
+
+                $(".set").click(()=>{
+                    $("h1").text("Hello I am sleeping");
+                    $("input").val("Hi I am developer");
+                    $("input").attr("type","number")
+                })
+            })
+
+
+
+        </script>
+    </body>
+</html>

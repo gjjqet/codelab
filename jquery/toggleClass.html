@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .header{
+                color: red;
+            }
+
+            .test{
+                color:green;
+            }
+
+             .change{
+                color: red;
+            } 
+
+            
+        </style>
+    </head>
+    <body>
+        <h1>Hello world</h1>
+        <h2 class="test">Hi I am testing</h2>
+        <button type="button">Click</button>
+        <ul>
+            <li>apple</li>
+            <li>orange</li>
+        </ul>
+        <script src="jquery.min.js"></script>
+        <script type="text/javascript">
+            $("ul").append(`<li>pomelo</li>`);
+            $("ul").prepend("<li>pomegranate</li>").before("Hi I am unorderlist").after("I am after");
+            $("h1").addClass("header");
+            // $('h2').removeClass("test");
+             $('button').click(()=>{
+                 $("h2").toggleClass("change")
+             })
+
+
+        </script>
+    </body>
+</html>
